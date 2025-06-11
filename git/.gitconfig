@@ -1,0 +1,24 @@
+[push]
+  default = simple
+[core]
+  editor = vim
+  autocrlf = input
+[alias]
+  oneline = log --pretty=format:'%h : %s' --graph
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%default%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  last = log -1 --stat
+  cp = cherry-pick
+  co = checkout
+  cl = clone
+  ci = commit
+  st = status -sb
+  br = branch
+  unstage = reset HEAD --
+  dc = diff --cached
+  update = "submodule foreach \"git checkout master & git pull\""
+  size = ! git ls-tree -r -t -l --full-name HEAD | sort -n -k 4 | tail -n 10
+[user]
+	email = ed.botzum@oracle.com
+	name = Ed Botzum
+[init]
+	defaultBranch = main

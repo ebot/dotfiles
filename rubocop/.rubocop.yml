@@ -1,0 +1,37 @@
+# Allow classes longer than 100 lines of code
+Metrics/ClassLength:
+  Max: 150
+
+# The default 10 lines limit is unrealistic.
+Metrics/MethodLength:
+  Max: 15
+
+# Increase the ABC complexity to 25
+Metrics/AbcSize:
+  Max: 25
+
+# Let lines go up to 85 characters long
+Layout/LineLength:
+  Max: 85
+
+# Do not insplect rake, spec, or test files
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'test/**/*.rb'
+    - 'spec/**/*.rb'
+
+# Do not analysze these files.
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'rakefile'
+    - 'Gemfile'
+    - 'Guardfile'
+    - '**/*.gemspec'
+
+# Disable End of Line Check for Linux/Windows
+Layout/EndOfLine:
+  EnforcedStyle: native
+  Enabled: false
