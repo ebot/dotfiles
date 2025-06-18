@@ -3,6 +3,7 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 font-family = "BlexMono Nerd Font"
+font-size = 14
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 macos-icon = retro
 quit-after-last-window-closed = true
