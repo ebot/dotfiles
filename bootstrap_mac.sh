@@ -45,6 +45,12 @@ brew install zellij
 # Install Alacritty - https://alacritty.org
 brew install alacritty
 
+# Install kitty shell
+brew install kitty
+
+# Install Yazi file browser
+brew install yazi
+
 # Install stow to manage dotfiles - https://www.gnu.org/software/stow/
 brew install stow
 
@@ -59,6 +65,7 @@ stow -R zellij
 stow -R alacritty
 stow -R rubocop
 stow -R vim
+stow -R kitty
 
 # # Install Vim
 # brew install macvim
