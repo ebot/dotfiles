@@ -33,7 +33,7 @@ brew install --cask ghostty
 # Install Starship Promt - https://starship.rs/
 brew install starship
 
-# Install LazyVim - https://www.lazyvim.org/
+# Install NVIM for LazyVim - https://www.lazyvim.org/
 brew install neovim
 
 # Install NerdFetch - https://github.com/ThatOneCalculator/NerdFetch
@@ -53,6 +53,9 @@ brew install yazi
 
 # Install stow to manage dotfiles - https://www.gnu.org/software/stow/
 brew install stow
+
+# Install lazygit so it works in lazyvim
+brew install lazygit
 
 # Setup Dotfiles
 rm ~/.zshrc
