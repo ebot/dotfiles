@@ -75,6 +75,9 @@ export PATH=/opt/homebrew/bin:$PATH
 # Start the starship prompt
 eval "$(starship init zsh)"
 
+# start mise
+eval "$(mise activate zsh)"
+
 # Set Zellij Tab
 zellij_tab_name_update() {
     if [[ -n $ZELLIJ ]]; then

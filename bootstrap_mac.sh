@@ -15,13 +15,8 @@ brew install git
 brew install htop
 brew install btop
 
-# Install asdf
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
-asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
-asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
+# Install mise
+brew install mise
 
 # Install java
 brew install graphviz
