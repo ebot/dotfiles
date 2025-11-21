@@ -15,8 +15,13 @@ brew install git
 brew install htop
 brew install btop
 
-# Install mise
-brew install mise
+# Install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf plugin add erlang https://github.com/asdf-vm/asdf-erlang.git
+asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf plugin-add golang https://github.com/kennyp/asdf-golang.git
 
 # Install java
 brew install graphviz
@@ -28,8 +33,14 @@ brew install --cask ghostty
 # Install Starship Promt - https://starship.rs/
 brew install starship
 
-# Install NVIM for LazyVim - https://www.lazyvim.org/
+# Install neovim for LazyVim - https://www.lazyvim.org/
 brew install neovim
+
+# Install fuzzy find for nvim
+brew install fzf
+brew install rigrep
+brew install fd
+brew install blink
 
 # Install NerdFetch - https://github.com/ThatOneCalculator/NerdFetch
 brew install NerdFetch
@@ -46,11 +57,16 @@ brew install kitty
 # Install Yazi file browser
 brew install yazi
 
+# Install some stuff that will improve yazi
+brew install clipboard # System Clipboard
+brew install viu       # Image Previews
+# brew install chafa   # Image Previews if Viu Does Not Work
+brew install ffmepg # Video Previews
+brew install p7zip  # Zip Contents Previews
+brew install zoxide # Provides Fuzzy Search
+
 # Install stow to manage dotfiles - https://www.gnu.org/software/stow/
 brew install stow
-
-# Install lazygit so it works in lazyvim
-brew install lazygit
 
 # Setup Dotfiles
 rm ~/.zshrc
@@ -64,6 +80,7 @@ stow -R alacritty
 stow -R rubocop
 stow -R vim
 stow -R kitty
+stow -R yazi
 
 # # Install Vim
 # brew install macvim

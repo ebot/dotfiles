@@ -75,9 +75,6 @@ export PATH=/opt/homebrew/bin:$PATH
 # Start the starship prompt
 eval "$(starship init zsh)"
 
-# start mise
-eval "$(mise activate zsh)"
-
 # Set Zellij Tab
 zellij_tab_name_update() {
     if [[ -n $ZELLIJ ]]; then
@@ -93,3 +90,10 @@ zellij_tab_name_update() {
 
 zellij_tab_name_update
 chpwd_functions+=(zellij_tab_name_update)
+
+# Add zoxide
+eval "$(zoxide init zsh)"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/ebotzum/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
