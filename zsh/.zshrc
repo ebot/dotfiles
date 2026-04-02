@@ -6,7 +6,6 @@ DEFAULT_USER="ed"
 
 plugins=(
   git
-  # asdf
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -62,9 +61,6 @@ start_ssh_agent() {
   fi
 }
 
-# Load asdf
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -94,6 +90,10 @@ chpwd_functions+=(zellij_tab_name_update)
 # Add zoxide
 eval "$(zoxide init zsh)"
 
+# Add mise
+echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/ebotzum/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+eval "$(mise activate zsh)"
