@@ -76,3 +76,4 @@ stow -R rubocop
 stow -R vim
 stow -R kitty
 stow -R yazi
+stow -R npm
