@@ -18,7 +18,7 @@
   update = "submodule foreach \"git checkout master & git pull\""
   size = ! git ls-tree -r -t -l --full-name HEAD | sort -n -k 4 | tail -n 10
 [user]
-	email = ed.botzum@oracle.com
-	name = Ed Botzum
+	email = contact@edbotz.us
+	name = ebot
 [init]
 	defaultBranch = main
