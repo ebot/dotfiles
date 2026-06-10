@@ -7,3 +7,6 @@ font-size = 14
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 macos-icon = retro
 quit-after-last-window-closed = true
+fullscreen = true
+
+config-file = ?linux # linux only config settings
