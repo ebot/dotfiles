@@ -46,6 +46,9 @@ brew install zellij
 # Install Alacritty - https://alacritty.org
 brew install alacritty
 
+# Install herdr - https://herdr.dev/
+brew install herdr
+
 # Install kitty shell
 brew install kitty
 
