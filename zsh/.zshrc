@@ -91,9 +91,6 @@ chpwd_functions+=(zellij_tab_name_update)
 eval "$(zoxide init zsh)"
 
 # Add mise
-echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+eval "$(mise activate zsh)"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/ebotzum/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-eval "$(mise activate zsh)"
